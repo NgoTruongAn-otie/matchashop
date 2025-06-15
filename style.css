@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style cho tiêu đề chính */
+h1 {
+    font-weight: 40; /* Đậm */
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+/* Có thể thêm phần phụ nếu có */
+p {
+    font-size: 18px;
+    color: #666;
+}
