@@ -1,10 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
     text-align: center;
     background-color: #fff;
     color: #333;
+}
+
+main {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /* Style cho tiêu đề chính */
@@ -18,4 +23,56 @@ h1 {
 p {
     font-size: 18px;
     color: #666;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    box-sizing: border-box;
+    z-index: 1000;
+    background-color: rgb(92, 177, 13);
+} 
+
+.navbar a {
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 35px;
+    color: #90EE90;
+}
+
+.navbar a::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white ;
+    transition: 0.2s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
 }
